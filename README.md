@@ -21,7 +21,7 @@ After you installed node.js to you computer, check again: terminal => node -v //
 ##### 3) To Initiate Mocha for the project you need do the following: terminal => npm install --global mocha // to install mocha globally npm install --save-dev mocha// to install mocha as development dependency for your project
 
 ##### 4) To Install Chai for the project you need do the following: terminal => npm install chai
-# Unit-testing with Mocha & Chai installation instructions
+Unit-testing with Mocha & Chai installation instructions
 
 ##### 4) To Install ESLint (a tool for identifying and reporting on patters found in JS code) for the project you need do the following:
 terminal => npm install eslint --save-dev
