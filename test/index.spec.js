@@ -1,60 +1,31 @@
 const assert = require('assert');
-const {isTeenager, sortArrayDown, isOddNumber} = require('../index.js');
+const {sum, mult} = require('../index.js');
+module.import = sum;
 
-describe('function Teenager', () => {
-    it('should be true if age is less than 19', () => {
-        assert.equal (isTeenager(19), true);
-    });
-    it('should be true if age is equal to 19', () => {
-        assert.equal (isTeenager(19), true);
-    });
-    it('should be false if age is greater than 19', () => {
-        assert.equal (isTeenager(19), false);
-    });
-    it('should be true if age is greater than 12', () => {
-        assert.equal (isTeenager(13), true);
-    });
-    it('should be true if age is equal to 13', () => {
-        assert.equal (isTeenager(13), true);
-    });
-    it('should be false if age is less than 13', () => {
-        assert.equal (isTeenager(13), false);
-    });
-    it('should be false if age is negative', () => {
-        assert.equal (isTeenager(-1), false);
-    });
-    it('should be undefined if age is undefined', () => {
-        assert.equal (isTeenager(), 'age is not defined');
-    });
-    it('should be undefined if age is not a number', () => {
-        assert.equal (isTeenager('abc'), 'age is not defined');
-    });
+describe('function sum', ()=> {
+  it ('should variable a  equal 10', ()=> {
+    assert.equal(sum(2,3),5);
+  });
+
+  it ('should variable a not equal 0', ()=> {
+    assert.notEqual(sum(2,3),6);
+  });
 });
 
-describe('function sortArrayDown', () => {
-    it('should array is sorted in decreasing order', () => {
-        assert.deepStrictEqual(sortArrayDown([10, 9, 8, 7]), [10, 9, 8, 7]);
-    });
-    it('should array is not sorted in decreasing order', () => {
-        assert.notDeepStrictEqual(sortArrayDown([10, 8, 2, 0]), [8, 2, 10, 0]);
-    });
-
-
-describe('function isOddNumber', () => {
-        it('should a number 3 is an odd number',  () => {
-            assert.equal(isOddNumber(3), true);
-        });
-
-        it('should a number 2 is not an odd number',  () => {
-            assert.equal(isOddNumber(2), false);
-        });
-
-        it('should a zero is not an odd number',  () => {
-            assert.equal(isOddNumber(0), false);
-        });
-
-        it('should an input is not a number',  () => {
-            assert.equal(isOddNumber('A'), "not a number");
-        });
+describe('function mult', ()=> {
+  it('should works correct', ()=>{
+    assert.equal(mult(2,3),6);
+  });
+  it('should pass', ()=>{
+    assert.notEqual(mult(2,3),0);
+  });
 });
 
+describe('function reverse', ()=> {
+  it('should works correct arr[1,2,3] and reverse for them [3,2,1]', ()=>{
+    assert.deepEqual(reverse([1, 2, 3],[3, 2, 1]));
+  });
+  it('should work uncorrect arr[1,2,3] and reverse for them [4,3,2]', ()=>{
+    assert.notDeepEqual(reverse([1, 2, 3],[4, 3, 2]));
+  });
+});

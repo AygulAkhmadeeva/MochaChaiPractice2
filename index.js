@@ -1,19 +1,17 @@
-function isTeenager(age) {
-    if (age === undefined || isNaN(age)) return "age is not defined";
-    return age >= 13 && age <= 19;
+function sum(a,b) {
+  return a+b;
 }
 
-function sortArrayDown(arr) {
-    return arr.sort((a, b) => b - a);
+function mult(a,b) {
+  return a*b;
 }
 
-function isOddNumber(number) {
-    if (isNaN(number)) return "not a number";
-    return (number % 2 !== 0);
+function reverse(arr) {
+  const newArr = [];
+  for (let i=arr.length; i>=0; i--){
+    newArr.push(arr[i]);
+  }
+  return newArr;
 }
 
-
-module.exports = {isTeenager, sortArrayDown, isOddNumber};
-
-
-
+module.exports = {sum, mult, reverse};
