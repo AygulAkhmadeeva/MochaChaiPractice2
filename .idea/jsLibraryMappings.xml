@@ -2,6 +2,6 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{MochaChaiPractice/node_modules}" />
-    <file url="PROJECT" libraries="{MochaChaiPractice/node_modules}" />
+    <file url="PROJECT" libraries="{@types/chai, @types/express, @types/mocha, @types/node, MochaChaiPractice/node_modules}" />
   </component>
 </project>
