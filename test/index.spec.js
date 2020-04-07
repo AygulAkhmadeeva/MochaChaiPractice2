@@ -1,17 +1,15 @@
 const assert = require('assert');
 const {expect} = require('chai');
-const {sum, checkTheBucket, spendEntireGiftCard, greet, cubeOdd, noSpace, times100, digital_root, inAscOrder, initializeNames, array_diff} = require('../index.js');
+const {sum, checkTheBucket, spendEntireGiftCard, greet, cubeOdd, noSpace,
+  times100, digital_root, inAscOrder, initializeNames, array_diff}
+  = require('../index.js');
 
 describe ('function sum', () => {
   it('should sum equals 5', ()=>{
-    // assert.equal(sum(2, 3), 5);
-    //expect(sum(2, 4)).to.equal(6);
     expect(sum(2, 4)).equal(6);
-    //expect(sum(2, 4)).eq(6);
   });
 
   it('should sum not equals 7', () => {
-    //assert.notEqual(sum(2, 3), 7);
     expect(sum(2, 4)).to.not.equal(7);
   });
 });
@@ -146,14 +144,14 @@ describe ('function noSpace', () => {
 describe ('function times100', () => {
   it('should return the arrays length equal to 100', ()=>{
     // assert.equal(times100('anna').length, 100);
-    expect(times100('anna')).to.have.lengthOf(100);
+    expect(times100('aya')).to.have.lengthOf(100);
   });
-  it('every element in the array must contain the word set in variable', ()=>{
-    expect(times100('anna').every(e => e === 'anna')).equal(true);
+  it('every element  in the array must contain the word set in variable', ()=>{
+    expect(times100('aya').every(e => e === 'aya')).equal(true);
   });
   it('should contain the word set in variable', ()=>{
-    expect(times100('anna')).to.include('anna');
-    expect(times100('anna')).to.be.an('array').that.includes('anna');
+    expect(times100('aya')).to.include('anna');
+    expect(times100('aya')).to.be.an('array').that.includes('aya');
   });
   it('should return the array of numbers if input is a number', ()=>{
     expect(times100(6).slice(5, 10)).deep.equal([6, 6, 6, 6, 6]);

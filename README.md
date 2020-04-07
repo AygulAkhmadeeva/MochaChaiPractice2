@@ -1,29 +1,62 @@
-# MochaChaiPractice2
+### Unit Testing using Mocha and Chai (NodeJS)
+* [Functions] (index.js)
+* [Tests] (test/index.spec.js)
+#### 1. Overview
 
-Unit-testing with Mocha & Chai
+The purpose of this project is to learn how to use Mocha/Chai to do unit tests in NodeJS.<br/>
 
-In this project we learn how to use Mocha Test Framework and Chai Assertion Library for Unit Testing in NodeJS.
-This is a set of unit tests to check given Functions. Tests are designed to cover different types of inputs.
+Mocha and Chai are two JavaScript frameworks commonly used together for unit testing. <br/>
 
-List of files
-Functions
-Tests with Mocha Assertion
-Tests with Chai Expect
-Installation
-#### 1) check if you have node.js installed on your computer: terminal => node -v
+Mocha is a feature-rich JavaScript test framework running on Node js and in the browser. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases in the terminal.<br/>
 
-If you get message 'command not found' => you don't have node installed. Go to the next step.
-If you get message 'Welcome to Node.js version-here' => you do have node installed. Go to step 3.
-##### 2) To Install node.js:
+Chai is an assertion library that is often used alongside Mocha. It provides functions and methods that help you compare the output of a certain test with its expected value. Chai provides natural language assertions, expressive and readable style.
 
-Go to nodejs.org to install node.js
-After you installed node.js to you computer, check again: terminal => node -v // You should get the message with node.js current version
-##### 3) To Initiate Mocha for the project you need do the following: terminal => npm install --global mocha // to install mocha globally npm install --save-dev mocha// to install mocha as development dependency for your project
+#### 2. Prerequisites
+##### 2.1. Node
+Install the node.js LTS version from Node website <br/>
 
-##### 4) To Install Chai for the project you need do the following: terminal => npm install chai
-Unit-testing with Mocha & Chai installation instructions
+##### 2.2 Npm
+Npm gets installed along with node automatically. In order to initialize it, the below command should be run in Terminal:
+*npm init*
 
-##### 4) To Install ESLint (a tool for identifying and reporting on patters found in JS code) for the project you need do the following:
-terminal => npm install eslint --save-dev
-terminal => npx eslint --init
-terminal =>
+The following commands can be used to check the successful installation of node and npm:<br/>
+
+*npm -v // will return installed npm version*
+
+*node -v // will return installed node version*
+
+##### 2.3 Mocha installation
+
+Run the below command in terminal:<br/>
+
+*npm install mocha* </br>
+
+Write the following command at the top of the file where the tests are expected to be in order to switch on Mocha:
+
+*const assert = require('assert');*
+
+##### 2.4 Chai installation
+Run the below commands in terminal or cmd:</br>
+
+*npm install chai* </br>
+
+Write the following command at the top of the file where the tests are expected to be in order to switch on Chai:
+
+*const {expect} = require('chai');*
+
+#### Eslint installation
+Run the below commands in terminal or cmd:</br>
+*npm install eslint --save-dev*
+
+To initialize Eslint, run the below commands in terminal or cmd:</br>
+*npx eslint --init*  </br>
+
+Answer questions.
+
+Settings -> Eslint -> switch to 'Automatic'.
+
+Add *"jest": true* to eslintc.json file.
+
+Add eslintc.json to Git; </br>
+
+In order to fix problems marked by Eslint: right click on the code -> Fix Eslint problems.

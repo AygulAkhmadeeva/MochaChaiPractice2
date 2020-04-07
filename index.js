@@ -1,3 +1,16 @@
+module.exports = {
+  sum,
+  checkTheBucket,
+  spendEntireGiftCard,
+  greet,
+  cubeOdd,
+  noSpace,
+  times100,
+  digital_root,
+  inAscOrder,
+  initializeNames,
+  array_diff
+};
 function sum(a, b) {
   return a + b;
 }
@@ -79,16 +92,3 @@ function array_diff(a, b) {
   return Array.isArray(a) && Array.isArray(b) ? a.filter(el => !b.includes(el)) : 'wrong data format';
 }
 
-module.exports = {
-  sum,
-  checkTheBucket,
-  spendEntireGiftCard,
-  greet,
-  cubeOdd,
-  noSpace,
-  times100,
-  digital_root,
-  inAscOrder,
-  initializeNames,
-  array_diff
-};

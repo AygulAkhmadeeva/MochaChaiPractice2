@@ -2,7 +2,7 @@
   "name": "mochachaipractice",
   "version": "1.0.0",
   "description": "",
-  "main": "solved tasks/index.js",
+  "main": "trush/solved tasks/index.js",
   "scripts": {
     "test": "mocha",
     "start": "node index.js"

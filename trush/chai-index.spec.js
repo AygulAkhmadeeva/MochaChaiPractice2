@@ -1,7 +1,7 @@
 const assert = require('assert');
 const {expect} = require('chai');
 
-const {isTeen, sum, mult, isAdult, isOddNumber, isEvenNumber, sortArrayUp, isPalindrome, pickIt, findAverage, mathPower} = require('../solved tasks');
+const {isTeen, sum, mult, isAdult, isOddNumber, isEvenNumber, sortArrayUp, isPalindrome, pickIt, findAverage, mathPower} = require('./solved tasks');
 
 describe('function isTeenager', () => {
   it('should return true if age is equal to 13', () =>{

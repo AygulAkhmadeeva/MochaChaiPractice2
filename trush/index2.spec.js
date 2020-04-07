@@ -1,7 +1,7 @@
 const assert = require('assert');
 const {expect} = require('chai');
 
-const {isTeen, sum, mult, isAdult, isOddNumber, isEvenNumber, sortArrayUp, isPalindrome} = require('../solved tasks');
+const {isTeen, sum, mult, isAdult, isOddNumber, isEvenNumber, sortArrayUp, isPalindrome} = require('./solved tasks');
 
 describe('function isPalindrome', () => {
   it('should return true if a string is a palindrome', () => {
