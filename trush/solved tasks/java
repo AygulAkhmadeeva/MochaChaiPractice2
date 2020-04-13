@@ -1,0 +1,88 @@
+
+// srednee arifmet arrray
+public class Main
+{
+	public static void main(String[] args)
+	{
+   int[] arr = {1,2,3,4,5,6,7,8};
+   double sum = 0;
+   for (int i = 0; i<arr.length; i++) {
+	   sum +=arr[i];
+   }
+	System.out.println(sum / arr.length);
+	}
+}
+
+// count all elements v arr
+public class Main
+{
+	public static void main(String[] args)
+	{
+   int[][] arr = {{1,2,3},{4,5,6,7,8},{-5,-3}};
+   int count = 0;
+   for (int i = 0; i<arr.length; i++) {
+		count += arr[i].length;
+	   }
+   System.out.println(count);
+   }
+}
+
+// arr in arr - string without 'e' (arr[i][j].charAt(k) == 'e')
+public class Main
+{
+	public static void main(String[] args)
+	{
+   String[][] arr = {{"Hi","new","student"},{", who're","learn","Java"}};
+   int count = 0;
+   for (int i = 0; i<arr.length; i++) {
+	   for (int j = 0; j<arr[i].length; j++) {
+			   if (!arr[i][j].contains("e")) {
+			count++;
+			   }
+		   }
+		}
+	   System.out.println(count);
+   }
+}
+
+// arr na ubivanie (decrement i>=0;  i--  ===>>>>   i-->0)
+public class Main
+{
+	public static void main(String[] args)
+	{
+   int[] arr = {1,2,3,4,5,6,7,8};
+   for (int i = arr.length-1; i>=0;) {
+   }
+	System.out.println(arr[i]);
+	}
+}
+
+//create class and function for him
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		Man man1 = new Man();  //type + name  = create(new) + type()
+		man1.name = "Mira";
+		man1.age = 30;
+		man1.sex = 'F';
+
+		Man man2 = new Man();
+		man2.name = "Igor";
+		man2.age = 32;
+		man2.sex = 'M';
+
+		System.out.println(man1.name);
+		System.out.println(man2.name);
+	}
+}
+
+public class Man
+{
+	String name;
+	int age;
+	char sex;
+}
+
+//
