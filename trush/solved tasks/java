@@ -86,3 +86,54 @@ public class Man
 }
 
 //
+public class Man
+{
+	String name;
+	int age;
+	char sex;
+
+	String getName() {
+		if (sex == 'M') {
+			return "Mr." + name;
+		} else {
+			return "Mrs." + name;
+		}
+	}
+
+	void printName() {
+		System.out.println(getName());
+	}
+// getters/setters
+
+public class Man
+{
+	String name;
+	int age;
+	char sex;
+
+	void setName(String name) {       //setter
+		this.name = name; //pole name = poly classa
+	}
+
+	String getName() {                //getter
+		return name;
+	}
+	public Man(String name, int age, char sex)
+	{
+		super();
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+}
+
+//Warmup-1 > startHi JAVA https://codingbat.com/prob/p191022
+public boolean startHi(String str) {
+  if (str.length() < 2) return false;
+  String firstTwo = str.substring(0, 2);
+  if (firstTwo.equals("hi")) {
+    return true;
+  } else {
+    return false;
+  }
+}
